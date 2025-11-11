@@ -1,6 +1,6 @@
 instances:
-  - url: https://paradex.docs.buildwithfern.com
-    custom-domain: https://docs.paradex.trade
+  - url: paradex-ask-ai.docs.buildwithfern.com
+  
     edit-this-page:
       github:
         owner: tradeparadex
@@ -36,9 +36,9 @@ navigation:
           - page: Roadmap
             slug: roadmap
             path: ./pages/introduction/roadmap.mdx
-          - page: Wallet Integration
-            slug: wallet-integration
-            path: ./pages/introduction/architecture-overview/wallet-integration.mdx
+          - page: Bridges and On-Ramps
+            slug: bridges
+            path: ./pages/introduction/bridges-onramps.mdx
           - page: Official Links
             slug: official-links
             path: ./pages/introduction/official-links.mdx
@@ -51,18 +51,37 @@ navigation:
               - page: Chain Information
                 slug: chain-information
                 path: ./pages/introduction/architecture-overview/chain-information.mdx
-              - page: Bridges
-                slug: bridges-and-audits
-                path: ./pages/introduction/architecture-overview/bridges-and-audits.mdx
               - page: Server Location
                 slug: server-location
                 path: ./pages/introduction/architecture-overview/server-location.mdx
               - page: Global IP Addresses
                 slug: global-ip-addresses
                 path: ./pages/introduction/architecture-overview/global-ip-addresses.mdx
+          - changelog: ./pages/changelog
+            title: What's New
+            icon: fa-solid fa-sparkle
+
+      - section: XP & Referrals
+        contents:
+          - page: Xperience Points
+            slug: xp
+            path: ./pages/points-and-referrals/xp.mdx
+          - page: Quote Quality Score
+            slug: quote-quality
+            path: ./pages/points-and-referrals/quote-quality.mdx
+          - page: Affiliate & Referrals
+            path: ./pages/points-and-referrals/affiliate-program.mdx
+
 
       - section: Trading
         contents:
+          - page: Retail Price Improvement
+            slug: rpi
+            path: ./pages/trading/rpi.mdx
+            icon: fa-regular fa-sparkles
+          - page: Trading Fees
+            slug: trading-fee
+            path: ./pages/trading/trading-fees.mdx
           - section: Perpetual Options
             slug: perpetual-options
             contents:
@@ -75,9 +94,18 @@ navigation:
               - page: Margin Requirements
                 slug: margin-requirements
                 path: ./pages/options/margin-requirements.mdx
+              - page: Pricing
+                slug: pricing
+                path: ./pages/options/pricing.mdx
+              - page: Mark Implied Volatility
+                slug: mark-iv
+                path: ./pages/options/mark-iv.mdx
               - page: Trade Examples
                 slug: trade-examples
                 path: ./pages/options/trade-examples.mdx
+              - page: Automatic Options Listing
+                slug: automatic-options-listing
+                path: ./pages/options/automatic-options-listing.mdx
           - section: Vaults
             contents:
               - page: Introduction
@@ -103,10 +131,6 @@ navigation:
               - page: FAQs
                 slug: faq
                 path: ./pages/vaults/faqs.mdx
-          - page: Retail Price Improvement
-            slug: rpi
-            path: ./pages/trading/rpi.mdx
-            icon: fa-regular fa-sparkles
           - section: Placing Orders
             path: ./pages/trading/placing-orders/placing-orders.mdx
             contents:
@@ -134,9 +158,7 @@ navigation:
                 path: ./pages/trading/placing-orders/order-instructions.mdx
                 slug: order-instructions
 
-          - page: Trading Fees
-            slug: trading-fees
-            path: ./pages/trading/trading-fees.mdx
+
           - section: Price Impact and Slippage
             slug: price-impact-and-slippage
             path: ./pages/trading/slippage-overview.mdx
@@ -147,6 +169,9 @@ navigation:
           - page: Margin Calculator
             slug: margin-calculator
             path: ./pages/trading/margin-calculator.mdx
+          - page: Account Privacy
+            slug: privacy
+            path: ./pages/trading/privacy.mdx
           - page: Testnet FAQs
             slug: testnet-faqs
             path: ./pages/trading/testnet.mdx
@@ -175,6 +200,9 @@ navigation:
                   - page: Cross Chain Bridging
                     slug: cross-chain-bridging
                     path: ./pages/accounts/deposits-and-withdrawals/cross-chain-bridging.mdx
+              - page: Wallet Integration
+                slug: wallet-integration
+                path: ./pages/introduction/architecture-overview/wallet-integration.mdx
               - page: Sub-accounts
                 slug: sub-accounts
                 path: ./pages/accounts/sub-accounts.mdx
@@ -202,45 +230,84 @@ navigation:
                       path: ./pages/instruments-guide/futures/tier-1/sol-usd-perp.mdx
                 - section: Tier 2
                   contents:
+                    - page: 0G-USD-PERP
+                      slug: 0g-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/0g-usd-perp.mdx
+                    - page: 4-USD-PERP
+                      slug: 4-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/4-usd-perp.mdx
                     - page: AAVE-USD-PERP
                       slug: aave-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/aave-usd-perp.mdx
                     - page: ADA-USD-PERP
                       slug: ada-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/ada-usd-perp.mdx
-                    - page: AEVO-USD-PERP
-                      slug: aevo-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/aevo-usd-perp.mdx
-                    - page: AI16Z-USD-PERP
-                      slug: ai16z-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/ai16z-usd-perp.mdx
+                    - page: AERO-USD-PERP
+                      slug: aero-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/aero-usd-perp.mdx
                     - page: AIXBT-USD-PERP
                       slug: aixbt-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/aixbt-usd-perp.mdx
-                    - page: ANIME-USD-PERP
-                      slug: anime-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/anime-usd-perp.mdx
+                    - page: APEX-USD-PERP
+                      slug: apex-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/apex-usd-perp.mdx
                     - page: APT-USD-PERP
                       slug: apt-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/apt-usd-perp.mdx
                     - page: ARB-USD-PERP
                       slug: arb-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/arb-usd-perp.mdx
+                    - page: ARKM-USD-PERP
+                      slug: arkm-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/arkm-usd-perp.mdx
+                    - page: ASTER-USD-PERP
+                      slug: aster-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/aster-usd-perp.mdx
+                    - page: ATOM-USD-PERP
+                      slug: atom-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/atom-usd-perp.mdx
                     - page: AVAX-USD-PERP
                       slug: avax-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/avax-usd-perp.mdx
+                    - page: AVNT-USD-PERP
+                      slug: avnt-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/avnt-usd-perp.mdx
+                    - page: BAT-USD-PERP
+                      slug: bat-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/bat-usd-perp.mdx
+                    - page: BCH-USD-PERP
+                      slug: bch-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/bch-usd-perp.mdx
                     - page: BERA-USD-PERP
                       slug: bera-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/bera-usd-perp.mdx
-                    - page: BMT-USD-PERP
-                      slug: bmt-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/bmt-usd-perp.mdx
                     - page: BNB-USD-PERP
                       slug: bnb-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/bnb-usd-perp.mdx
+                    - page: CAKE-USD-PERP
+                      slug: cake-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/cake-usd-perp.mdx
+                    - page: CC-USD-PERP
+                      slug: cc-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/cc-usd-perp.mdx
+                    - page: CLANKER-USD-PERP
+                      slug: clanker-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/clanker-usd-perp.mdx
+                    - page: COAI-USD-PERP
+                      slug: coai-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/coai-usd-perp.mdx
+                    - page: CRV-USD-PERP
+                      slug: crv-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/crv-usd-perp.mdx
+                    - page: DASH-USD-PERP
+                      slug: dash-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/dash-usd-perp.mdx
                     - page: DOGE-USD-PERP
                       slug: doge-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/doge-usd-perp.mdx
+                    - page: DOLO-USD-PERP
+                      slug: dolo-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/dolo-usd-perp.mdx
                     - page: DOT-USD-PERP
                       slug: dot-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/dot-usd-perp.mdx
@@ -253,39 +320,45 @@ navigation:
                     - page: EIGEN-USD-PERP
                       slug: eigen-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/eigen-usd-perp.mdx
-                    - page: ELX-USD-PERP
-                      slug: elx-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/elx-usd-perp.mdx
                     - page: ETHFI-USD-PERP
                       slug: ethfi-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/ethfi-usd-perp.mdx
+                    - page: F-USD-PERP
+                      slug: f-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/f-usd-perp.mdx
                     - page: FARTCOIN-USD-PERP
                       slug: fartcoin-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/fartcoin-usd-perp.mdx
+                    - page: FF-USD-PERP
+                      slug: ff-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/ff-usd-perp.mdx
                     - page: FIL-USD-PERP
                       slug: fil-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/fil-usd-perp.mdx
                     - page: FLOW-USD-PERP
                       slug: flow-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/flow-usd-perp.mdx
+                    - page: FORM-USD-PERP
+                      slug: form-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/form-usd-perp.mdx
                     - page: GOAT-USD-PERP
                       slug: goat-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/goat-usd-perp.mdx
                     - page: GRASS-USD-PERP
                       slug: grass-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/grass-usd-perp.mdx
-                    - page: HUMA-USD-PERP
-                      slug: huma-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/huma-usd-perp.mdx
                     - page: HYPE-USD-PERP
                       slug: hype-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/hype-usd-perp.mdx
                     - page: HYPER-USD-PERP
                       slug: hyper-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/hyper-usd-perp.mdx
-                    - page: INIT-USD-PERP
-                      slug: init-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/init-usd-perp.mdx
+                    - page: HYPE-USD-PERP
+                      slug: hype-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/hype-usd-perp.mdx
+                    - page: ICP-USD-PERP
+                      slug: icp-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/icp-usd-perp.mdx
                     - page: INJ-USD-PERP
                       slug: inj-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/inj-usd-perp.mdx
@@ -304,51 +377,51 @@ navigation:
                     - page: kBONK-USD-PERP
                       slug: kbonk-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/kbonk-usd-perp.mdx
+                    - page: kFLOKI-USD-PERP
+                      slug: kfloki-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/kfloki-usd-perp.mdx
                     - page: kPEPE-USD-PERP
                       slug: kpepe-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/kpepe-usd-perp.mdx
                     - page: kSHIB-USD-PERP
                       slug: kshib-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/kshib-usd-perp.mdx
-                    - page: LAYER-USD-PERP
-                      slug: layer-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/layer-usd-perp.mdx
                     - page: LDO-USD-PERP
                       slug: ldo-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/ldo-usd-perp.mdx
+                    - page: LINEA-USD-PERP
+                      slug: linea-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/linea-usd-perp.mdx
                     - page: LINK-USD-PERP
                       slug: link-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/link-usd-perp.mdx
                     - page: LTC-USD-PERP
                       slug: ltc-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/ltc-usd-perp.mdx
-                    - page: MELANIA-USD-PERP
-                      slug: melania-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/melania-usd-perp.mdx
-                    - page: MEW-USD-PERP
-                      slug: mew-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/mew-usd-perp.mdx
-                    - page: MKR-USD-PERP
-                      slug: mkr-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/mkr-usd-perp.mdx
+                    - page: MET-USD-PERP
+                      slug: met-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/met-usd-perp.mdx
+                    - page: MERL-USD-PERP
+                      slug: merl-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/merl-usd-perp.mdx
                     - page: MOODENG-USD-PERP
                       slug: moodeng-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/moodeng-usd-perp.mdx
                     - page: MORPHO-USD-PERP
                       slug: morpho-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/morpho-usd-perp.mdx
-                    - page: MOVE-USD-PERP
-                      slug: move-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/move-usd-perp.mdx
+                    - page: MNT-USD-PERP
+                      slug: mnt-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/mnt-usd-perp.mdx
+                    - page: MYX-USD-PERP
+                      slug: myx-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/myx-usd-perp.mdx
                     - page: NEAR-USD-PERP
                       slug: near-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/near-usd-perp.mdx
                     - page: NEIRO-USD-PERP
                       slug: neiro-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/neiro-usd-perp.mdx
-                    - page: NIL-USD-PERP
-                      slug: nil-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/nil-usd-perp.mdx
                     - page: OM-USD-PERP
                       slug: om-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/om-usd-perp.mdx
@@ -358,6 +431,9 @@ navigation:
                     - page: OP-USD-PERP
                       slug: op-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/op-usd-perp.mdx
+                    - page: ORDER-USD-PERP
+                      slug: order-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/order-usd-perp.mdx
                     - page: ORDI-USD-PERP
                       slug: ordi-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/ordi-usd-perp.mdx
@@ -373,45 +449,51 @@ navigation:
                     - page: PLUME-USD-PERP
                       slug: plume-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/plume-usd-perp.mdx
-                    - page: PNUT-USD-PERP
-                      slug: pnut-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/pnut-usd-perp.mdx
                     - page: POPCAT-USD-PERP
                       slug: popcat-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/popcat-usd-perp.mdx
+                    - page: PROVE-USD-PERP
+                      slug: prove-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/prove-usd-perp.mdx
+                    - page: PUMP-USD-PERP
+                      slug: pump-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/pump-usd-perp.mdx
                     - page: PYTH-USD-PERP
                       slug: pyth-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/pyth-usd-perp.mdx
-                    - page: RAY-USD-PERP
-                      slug: ray-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/ray-usd-perp.mdx
-                    - page: RED-USD-PERP
-                      slug: red-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/red-usd-perp.mdx
+                    - page: PURR-USD-PERP
+                      slug: purr-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/purr-usd-perp.mdx
+                    - page: RESOLV-USD-PERP
+                      slug: resolv-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/resolv-usd-perp.mdx
                     - page: RUNE-USD-PERP
                       slug: rune-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/rune-usd-perp.mdx
                     - page: S-USD-PERP
                       slug: s-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/s-usd-perp.mdx
-                    - page: SAND-USD-PERP
-                      slug: sand-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/sand-usd-perp.mdx
-                    - page: SCR-USD-PERP
-                      slug: scr-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/scr-usd-perp.mdx
                     - page: SEI-USD-PERP
                       slug: sei-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/sei-usd-perp.mdx
-                    - page: SOPH-USD-PERP
-                      slug: soph-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/soph-usd-perp.mdx
+                    - page: SNX-USD-PERP
+                      slug: snx-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/snx-usd-perp.mdx
+                    - page: SPX-USD-PERP
+                      slug: spx-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/spx-usd-perp.mdx
+                    - page: STBL-USD-PERP
+                      slug: stbl-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/stbl-usd-perp.mdx
                     - page: STRK-USD-PERP
                       slug: strk-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/strk-usd-perp.mdx
                     - page: SUI-USD-PERP
                       slug: sui-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/sui-usd-perp.mdx
+                    - page: SYRUP-USD-PERP
+                      slug: syrup-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/syrup-usd-perp.mdx
                     - page: TAO-USD-PERP
                       slug: tao-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/tao-usd-perp.mdx
@@ -424,24 +506,15 @@ navigation:
                     - page: TRUMP-USD-PERP
                       slug: trump-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/trump-usd-perp.mdx
-                    - page: TRB-USD-PERP
-                      slug: trb-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/trb-usd-perp.mdx
                     - page: TRX-USD-PERP
                       slug: trx-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/trx-usd-perp.mdx
-                    - page: TST-USD-PERP
-                      slug: tst-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/tst-usd-perp.mdx
                     - page: UNI-USD-PERP
                       slug: uni-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/uni-usd-perp.mdx
                     - page: USUAL-USD-PERP
                       slug: usual-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/usual-usd-perp.mdx
-                    - page: VINE-USD-PERP
-                      slug: vine-usd-perp
-                      path: ./pages/instruments-guide/futures/tier-2/vine-usd-perp.mdx
                     - page: VIRTUAL-USD-PERP
                       slug: virtual-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/virtual-usd-perp.mdx
@@ -460,15 +533,33 @@ navigation:
                     - page: WLD-USD-PERP
                       slug: wld-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/wld-usd-perp.mdx
+                    - page: WLFI-USD-PERP
+                      slug: wlfi-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/wlfi-usd-perp.mdx
+                    - page: WOO-USD-PERP
+                      slug: woo-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/woo-usd-perp.mdx
                     - page: XLM-USD-PERP
                       slug: xlm-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/xlm-usd-perp.mdx
                     - page: XMR-USD-PERP
                       slug: xmr-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/xmr-usd-perp.mdx
+                    - page: XPL-USD-PERP
+                      slug: xpl-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/xpl-usd-perp.mdx
                     - page: XRP-USD-PERP
                       slug: xrp-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/xrp-usd-perp.mdx
+                    - page: YB-USD-PERP
+                      slug: yb-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/yb-usd-perp.mdx
+                    - page: ZEC-USD-PERP
+                      slug: zec-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/zec-usd-perp.mdx
+                    - page: ZK-USD-PERP
+                      slug: zk-usd-perp
+                      path: ./pages/instruments-guide/futures/tier-2/zk-usd-perp.mdx
                     - page: ZORA-USD-PERP
                       slug: zora-usd-perp
                       path: ./pages/instruments-guide/futures/tier-2/zora-usd-perp.mdx
@@ -483,18 +574,18 @@ navigation:
                 - page: ETH
                   slug: eth
                   path: ./pages/instruments-guide/options/eth.mdx
-                - page: SOL
-                  slug: sol
-                  path: ./pages/instruments-guide/options/sol.mdx
-                - page: HYPE
-                  slug: hype
-                  path: ./pages/instruments-guide/options/hype.mdx
+          - page: API Authentication
+            slug: api-authentication
+            path: ./pages/trading/api-authentication.mdx
+          - page: API Best Practices
+            slug: api-best-practices
+            path: ./pages/trading/API-Best-Practices.mdx
 
       - section: Risk & Liquidations
         slug: risk
         contents:
-          - page: Paradex Margin System
-            slug: paradex-risk-system
+          - page: Margin System
+            slug: margin-system
             path: ./pages/risk-system/paradex-risk-system.mdx
           - page: Margin Term Reference
             slug: margin-term-reference
@@ -530,16 +621,6 @@ navigation:
             slug: trade-busts
             path: ./pages/risk-system/trade-busts.mdx
 
-      - section: XP & Referrals
-        contents:
-          - page: Xperience Points
-            slug: xp
-            path: ./pages/points-and-referrals/xp.mdx
-          - page: Referral Program
-            path: ./pages/points-and-referrals/referrals.mdx
-          - page: Affiliate Program
-            path: ./pages/points-and-referrals/affiliate.mdx
-
       - section: Security & Trust
         slug: security
         contents:
@@ -561,9 +642,9 @@ navigation:
           - page: Introduction
             slug: paradex-chain-introduction
             path: ./pages/paradex-chain/introduction.mdx
-          - page: Node Setup
-            slug: node-setup
-            path: ./pages/paradex-chain/node-setup.mdx
+          - page: RPC Node
+            slug: paradex-chain-rpc-node
+            path: ./pages/paradex-chain/rpc-node.mdx
           - page: Testnet
             slug: paradex-chain-testnet
             path: ./pages/paradex-chain/testnet.mdx
@@ -595,13 +676,53 @@ navigation:
       - section: Release Notes
         path: ./pages/release-notes/overview.mdx
         contents:
-          - page: v1.98
-            path: ./pages/release-notes/v1.98.md
-          - page: v1.97
-            path: ./pages/release-notes/v1.97.md
+          - page: v1.120
+            path: ./pages/release-notes/v1.120.md
           - section: Archive
             path: ./pages/release-notes/archive.mdx
             contents:
+              - page: v1.119
+                path: ./pages/release-notes/v1.119.md
+              - page: v1.118
+                path: ./pages/release-notes/v1.118.md
+              - page: v1.117
+                path: ./pages/release-notes/v1.117.md
+              - page: v1.116
+                path: ./pages/release-notes/v1.116.md
+              - page: v1.115
+                path: ./pages/release-notes/v1.115.md
+              - page: v1.114
+                path: ./pages/release-notes/v1.114.md
+              - page: v1.113
+                path: ./pages/release-notes/v1.113.md
+              - page: v1.112
+                path: ./pages/release-notes/v1.112.md
+              - page: v1.111
+                path: ./pages/release-notes/v1.111.md
+              - page: v1.109
+                path: ./pages/release-notes/v1.109.md
+              - page: v1.107
+                path: ./pages/release-notes/v1.107.md
+              - page: v1.106
+                path: ./pages/release-notes/v1.106.md
+              - page: v1.105
+                path: ./pages/release-notes/v1.105.md
+              - page: v1.104
+                path: ./pages/release-notes/v1.104.md
+              - page: v1.103
+                path: ./pages/release-notes/v1.103.md
+              - page: v1.102
+                path: ./pages/release-notes/v1.102.md
+              - page: v1.101
+                path: ./pages/release-notes/v1.101.md
+              - page: v1.100
+                path: ./pages/release-notes/v1.100.md
+              - page: v1.99
+                path: ./pages/release-notes/v1.99.md
+              - page: v1.98
+                path: ./pages/release-notes/v1.98.md
+              - page: v1.97
+                path: ./pages/release-notes/v1.97.md
               - page: v1.96
                 path: ./pages/release-notes/v1.96.md
               - page: v1.95
@@ -829,6 +950,9 @@ navigation:
           - link: CCXT Integration
             href: https://docs.ccxt.com/#/exchanges/paradex
 navbar-links:
+  - type: minimal
+    text: $DIME Nation
+    url: https://discord.gg/paradex
   - type: filled
     text: Launch Exchange
     rounded: true
@@ -865,6 +989,9 @@ redirects:
   - source: "documentation/trading/perpetual-options/trading-fees"
     destination: "/documentation/trading/trading-fees"
 
+  - source: "/risk/paradex-risk-system"
+    destination: "/risk/margin-system"
+
 layout:
   header-height: 72px
   searchbar-placement: header
@@ -880,6 +1007,7 @@ typography:
   headingsFont:
     name: HarmonyOS
     path: ./assets/HarmonyOS_Sans_Bold.woff2
+    weight: 700
 logo:
   light: ./assets/logo-light.svg
   dark: ./assets/logo-dark.svg
@@ -895,6 +1023,8 @@ css: ./assets/styles.css
 js:
   - path: ./dist/dd-rum.js
   - path: ./dist/add-pixel.js
+    strategy: lazyOnload
+  - path: ./dist/inkeep.js
     strategy: lazyOnload
 
 experimental:

@@ -3,10 +3,6 @@ title: Retail Price Improvement
 subtitle: Better pricing for retail traders with selective order visibility
 ---
 
-<Warning>
-RPI orders are in Beta and currently only available for selected market-making partners
-</Warning>
-
 ## Overview
 
 Retail Price Improvement (RPI) is a specialized order type that provides better pricing and execution opportunities for retail traders while protecting market makers from toxic flow. It achieves this through selective order visibility - orders are visible in the UI but hidden from API access.
@@ -23,6 +19,38 @@ Retail Price Improvement (RPI) is a specialized order type that provides better 
   </Card>
 </CardGroup>
 
+## Trader Profiles
+
+Paradex offers two trading profiles to cater to different user needs: Standard and Retail. 
+Activating the Retail profile is opt-in and eligibility is determined through authentication and activity checks.
+
+### Retail Profile (Opt-in) - Default for UI Traders
+
+Suitable for retail traders seeking price improvement.
+
+<Card title="Faster Fills for Retail Traders">
+  To improve trade execution speed for retail users, API traders now receive a **75% fee discount** when they match with passive orders from a Retail Profile. This incentive is designed to get your passive orders filled faster. No action is required on your part.
+</Card>
+
+- **Order Submission Speed Bump:** `500ms`
+- **Order Cancel Speed Bump:** `300ms`
+- **Activity Thresholds**: If exceeded, orders will lose access to RPI liquidity.
+    - `3` orders / second
+    - `30` orders / minute
+    - `300` orders / hour
+    - `1000` orders / 24 hours
+
+To obtain retail token pass `?token_usage=interactive` to `/v1/auth` endpoint.
+
+### Standard Profile - Default for API Traders
+
+All orders submitted without retail JWT token are classed as Standard Profile.
+
+<Note>
+  Both Retail and Standard profile order management are subject to [Global Account Rate Limits](/api/general-information/rate-limits/api)
+</Note>
+
+
 ## Matching Rules
 
 RPI orders follow specific matching rules to ensure fair and efficient trading:
@@ -31,9 +59,7 @@ RPI orders follow specific matching rules to ensure fair and efficient trading:
 
 2. **Post-Only Requirement**: All RPI orders must be [Post-Only](/trading/placing-orders/order-instructions#post-only), meaning they will only provide liquidity and never take liquidity.
 
-3. **Price Improvement Rule**: RPI orders must be submitted inside the lit bid-ask spread (improving price). If the spread is 1 tick, placing at best bid or best ask is permitted.
-
-4. **Execution Priority**: RPI orders have the lowest execution priority, regardless of when they're placed. They will only be filled after all non-RPI orders at the same price level have been executed.
+3. **Execution Priority**: RPI orders have the lowest execution priority, regardless of when they're placed. They will only be filled after all non-RPI orders at the same price level have been executed.
 
 ## Order Behavior and Visibility
 

@@ -1,99 +1,252 @@
 ---
 title: Roadmap
-subtitle: Overview of the Paradex Roadmap
 layout: reference
 ---
 
 <Tabs>
-  <Tab title="2025 (To Date)">
+  <Tab title="2025 & Beyond">
     ### Upcoming
+    <CardGroup cols={4}>
+      <Card title="Liquidity" icon="layer-group">
+        - RFQ Trading w/ [Paradigm](https://app.paradigm.trade/))
+        - Midpoint Dark Orders for Whales
+      </Card>
+      <Card title="Platform" icon="chart-network">
+        - Redesign of the trading experience (Desktop 3.0 / Mobile 2.0)
+        - Fast Isolated Margin Transfers
+        - Fast Isolated Margin Account Value Updates
+        - Spot
+        - Spot VTFs
+        - Portfolio Margin
+        - Dated Options
+        - Multiple Collateral Types
+        - Auto-Borrow and Lend
+        - XUSD (Delta-Neutral Synthetic Dollar)
+        - Pre-market Perps
+      </Card>
+      <Card title="Infra" icon="lighthouse">
+        - Upgrade to SN 0.14 (Decentralized Sequencer Architecture)
+        - Reduce P95 order creation end to end latency < 50ms
+        - Interop with Hyperlane
+        - SuperChain Mainnet
+      </Card>
+      <Card title="Privacy" icon="signature-lock">
+        - Full Position Privacy via RPC Masking (L2) + Encrypted DA (L1)
+        - Full Smart Contract-Level Privacy with Cryptographic Guarantees
+      </Card>
+    </CardGroup>
+
+    ### 2025 Q4
     <CardGroup cols={3}>
-      <Card title="Expand Product Offering" >
-        * Spot Trading + Multi-collateral (any crypto as collateral)
-        * XUSD (yield-bearing synthetic dollar)
-        * Intent-based RFQ trading (via [app.paradigm.trade](https://app.paradigm.trade/))
-        * AI-Agents that manage Paradex Vaults
-      </Card>
+      <Card title="Oct 2025">
+        **New Markets**
+          - 12 new perpetual markets
 
-      <Card title="User Experience & Privacy" >
-        * Multi-strategy vaults (e.g., Covered Call Vaults)
-      </Card>
+        **Liquidity & Trading**
+          - [TAP Affiliate Program](https://x.com/paradex/status/1975585238404505996)
+          - [FastFills Taker Discount](https://discord.com/channels/1107916848193863740/1107926829739819022/1431636494610727083)
 
-      <Card title="Paradex Chain" >
-        * Opening to external developers on Mainnet
-        * zk-based position privacy (via client side proving)
-      </Card>
+        **Performance & Infra**
+          - [XP Transfers](https://x.com/paradex/status/1983042695120728386)
+          - 200% blockchain throughput increase (Cairo Native)
+          - Cancel all by market performance improvements
 
-      <Card title="Full Decentralization" >
-        * Moving from Stage 0 to Stage 1 Rollup (L2beat framework)
-        * Delegating governance to the community
-        * Open-sourcing the entire stack
+        **UX**
+          - Drag TPSL to edit directly on charts
+          - Faster candlestick rendering
+          - Order book spread synced with order book updates
+          - Faster estimated PnL updates
+          - ISO tagging on transfers table
+          - Persist order builder configurations between page reloads
+          - Granular notification settings by type
+          - Filters in Trade and Order History tabs
+          - Order history on mobile trade tab
+          - Trade Time display on mobile trade tape
       </Card>
+    </CardGroup>
 
-      <Card title="Infrastructure: Bridging & Oracles" >
-        * Interop with Hyperlane
-        * Fast withdrawals
-        * Internal Spot Oracle for instant asset listings
+    ### 2025 Q3
+    <CardGroup cols={3}>
+      <Card title="Jul 2025">
+        **New Markets**
+          - 10 new perpetual markets
+          - PAXG Perpetual Options Launch
+
+        **Performance & Infra**
+          - [Interchain Deposits powered by Hyperlane (Beta)](/getting-started/whats-new/2025/7/18#interchain-deposits-powered-by-hyperlane-beta)
+          - Portfolio Margin (Invite Only Beta)
+          - Retail Order Tagging for Takers
+          - Blocktrade / Positions Transfer API (Invite Only Beta)
+          - [Bridge using Orbiter Finance](/getting-started/whats-new/2025/7/18#orbiter-finance-bridge)
+
+        **UX**
+          - Show Total UP&L on Portfolio and Account Summary
+          - Aggregate multiple fills on trade history
+          - Estimated P&L in TP/SL order builder
+          - Calculate Size in TPSL
+          - Volume on Mark Price chart
+          - Withdraw Vault Tokens in USDC Terms
+          - Search markets using alias terms
+          - RPI Savings on Orderbook
+          - Weekly and monthly chart timeframes
+          - Display account USDC balance on deposit modal for all chains
+          - Resizable charts on trade page
+          - Deposit max USDC on deposit modal
+          - Display usernames in Switch Account modal
+      </Card>
+      <Card title="Aug 2025">
+        **New Markets**
+          - 5 new perpetual markets
+
+        **Performance & Infra**
+          - Interchain Withdrawals powered by Hyperlane (Beta)
+          - [Public Bug Bounty](https://immunefi.com/bug-bounty/paradex/information/)
+
+        **UX**
+          - Populate Bid / Mid / Ask values in limit close modal
+          - Date tooltip on trade tape trade time
+          - Sort by column headers in open orders, trade history and order history
+          - Set USD order size as a configurable default
+          - Adjust margin button for isolated margin position on mobile
+          - Numeric keyboard for number inputs on iOS
+          - Orderbook decimals now match selected tick size
+      </Card>
+      <Card title="Sep 2025">
+        **Markets**
+          - 20 new perpetual markets
+
+        **Liquidity & Trading**
+          - ZERO Fee Perps
+
+        **Performance & Infra**
+          - Revamped referral code infrastructure
+
+        **UX**
+          - Toggle notification settings based on type
+          - Step-by-step wallet connection progress indicator
+          - Size no longer changes when switching between buy/sell
+          - Disable chart market symbol labels by default
+          - Market dropdown sorting persists between page changes
+          - Lifetime fee savings on Portfolio page
+          - Show Vaults 24h returns
+          - Share XP card
       </Card>
     </CardGroup>
 
     ### 2025 Q2
     <CardGroup cols={3}>
+      <Card title="Jun 2025">
+        **New Markets**
+          - 6 new perpetual markets
+
+
+        **Liquidity & Trading**
+          - [Retail Price Improvement (RPI) Orders](/trading/rpi)
+  
+
+        **Performance & Infra**
+          - Deposit from Solana
+
+        **UX**
+          - Mobile UI 2.0
+          - Dollar-denominated TP/SL orders
+          - Switch accounts from Portfolio Page
+          - Drawing Utils on Trading View
+      </Card>
+
       <Card title="May 2025">
-        * Added 4 new perps
-        * Added HYPE Perpetual Options
-        * RhinoFi and Layerswap deposit and withdrawal flows integrated within UI
-        * Order Latency reduced by 50-70% across P50, P95 and P99
-        * Revamped Funding PnL Realization logic
-        * Portfolio PnL charts now aggregates up to 90d and 180d
-        * Updated Click-on-OB feature to support Pro order types, TWAP & Scaled order
-        * Added Funding Period to Trade Page Contract Summary
-        * Estimated Margin on Order Builder
-        * Cash Greeks added to Portfolio Risk
+        **New Markets**
+          - 4 new perpetual markets
+          - HYPE Perpetual Options launch
+
+
+        **Performance & Infra**
+          - 50-70% order latency reduction across P50, P95, P99
+
+
+        **Liquidity & Trading**
+          - Enhanced Funding PnL logic
+          - Revamped Funding PnL Realization logic
+          - Estimated Margin on Order Builder
+
+
+        **UX**
+          - Extended portfolio charts (90d/180d)
+          - RhinoFi and Layerswap bridge flows integrated within UI
       </Card>
 
       <Card title="April 2025">
-        * Added 5 new perps
-        * Public Release of BTC Perpetual Options
-        * Added ETH and SOL Perpetual Options
-        * Isolated Margin launched for Perpetual Futures
-        * Advanced TP/SL mode added to order builder
-        * CSV export for Trade History, Order History, Funding History, and Transfers
-        * Configurable Slippage per market
-        * Option Greeks on order builder
-        * Switch between Spot and Mark price for Order Values displayed on UI
+        **New Markets**
+          - 5 new perpetual markets
+          - BTC/ETH/SOL Perpetual Options launch
+
+
+        **Liquidity & Trading**
+          - Isolated Margin for Perp futures
+          - Advanced TP/SL functionality
+          - Option Greeks on order builder
+
+
+        **UX**
+          - CSV exports on Portfolio Page
+          - Configurable slippage
+          - Switch between Spot and Mark price for Order Values displayed on UI
       </Card>
     </CardGroup>
 
     ### 2025 Q1
     <CardGroup cols={3}>
       <Card title="March 2025">
-        * Added 6 new perps
-        * Opened Paradex Chain [to external developers on Testnet](https://x.com/tradeparadex/status/1897968442780926336)
-        * Modify open orders price and size
-        * Order Builder UI Redesign
+        **New Markets**
+          - 6 new perpetual markets
+
+
+        **Liquidity & Trading**
+          - Modify open orders price and size
+          - Redesigned order builder
+
+
+        **Performance & Infra**
+          - Opened Paradex Chain [to external developers on Testnet](https://x.com/tradeparadex/status/1897968442780926336)
       </Card>
 
       <Card title="February 2025">
-        * Added 8 new perps
-        * Configurable Max Leverage
-        * Filtering Markets by Categories and Favorites
-        * Trade History on TradingView Chartx
+        **New Markets**
+          - 8 new perpetual markets
+
+
+        **Liquidity & Trading**
+          - Configurable Max Leverage
+
+
+        **UX**
+          - Filtering Markets by Categories and Favorites
+          - Trade History on TradingView Chart
       </Card>
 
       <Card title="January 2025">
-        * Added 11 new perps (90 markets total)
-        * Multi-strategy Vaults on Gigavault
-        * Limit TPSL Orders
-        * Social Logins with Privy
-        * Latency Improvements (5x throughput)
-        * Private Beta Release of Perpetual Options
+        **New Markets**
+          - 11 new perpetual markets
+          - Private Beta Release of Perpetual Options
+
+
+        **Liquidity & Trading**
+          - Multi-strategy Vaults (Gigavault only)
+          - Limit TPSL Orders
+
+
+        **Performance**
+          - Latency Improvements (5x throughput)
+
+
+        **UX**
+          - Social Logins with Privy
       </Card>
     </CardGroup>
-
   </Tab>
-  <Tab title="2024">
-    <Frame caption="Paradex 2024 Roadmap">
+
+  <Tab title="2024 Achievements">
+    <Frame caption="Paradex 2024 Journey">
       <img src="../../assets/Paradex_2024_Roadmap_v1.png" />
     </Frame>
 
@@ -199,6 +352,5 @@ layout: reference
         * Surpassed **$2BM** monthly trading volume
       </Card>
     </CardGroup>
-
   </Tab>
 </Tabs>
