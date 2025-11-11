@@ -32,4 +32,4 @@ jobs:
       - name: Publish Docs
         env:
           FERN_TOKEN: ${{ secrets.FERN_TOKEN }}
-        run: fern generate --docs --instance https://paradex.docs.buildwithfern.com
+        run: fern generate --docs --instance paradex-ask-ai.docs.buildwithfern.com

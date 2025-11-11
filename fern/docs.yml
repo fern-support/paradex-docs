@@ -1,12 +1,13 @@
 instances:
-  - url: paradex-ask-ai.docs.buildwithfern.com
-  
+  - url: https://paradex.docs.buildwithfern.com
+    custom-domain: https://docs.paradex.trade
     edit-this-page:
       github:
         owner: tradeparadex
         repo: paradex-docs
         branch: main
   - url: https://paradex-dev.docs.buildwithfern.com
+  - url: paradex-ask-ai.docs.buildwithfern.com
 title: Paradex | Documentation
 tabs:
   docs:
