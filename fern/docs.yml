@@ -1,6 +1,6 @@
 instances:
-  - url: https://paradex.docs.buildwithfern.com
-    custom-domain: https://docs.paradex.trade
+  - url: paradex-ask-ai.docs.buildwithfern.com
+  
     edit-this-page:
       github:
         owner: tradeparadex
